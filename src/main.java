@@ -4,4 +4,5 @@ public class main {
     public static void main(String[] args){
         System.out.println("you made of water? Us too.");
     }
+
 }
