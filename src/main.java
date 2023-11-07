@@ -8,8 +8,8 @@ public class main {
 
 
     public void initWindow(){
-        //sets everything with the layouts and all that jazz. This currently only works with 1920x1080 monitors. Sorry :P.
-        //frame.setSize(1920,1080);
+        Color colour = new Color(82,82,82);
+        frame.setBackground(colour);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
         frame.setLayout(null);
