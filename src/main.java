@@ -8,8 +8,8 @@ public class main {
 
 
     public void initWindow(){
-        Color colour = new Color(82,82,82);
-        frame.setBackground(colour);
+        Color backgroundColour = new Color(82,82,82);
+        frame.getContentPane().setBackground(backgroundColour);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
         frame.setLayout(null);
