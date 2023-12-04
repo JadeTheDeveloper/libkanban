@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class main {
@@ -9,9 +11,18 @@ public class main {
     JMenu menu = new JMenu("File");
     JMenuItem exit = new JMenuItem("Exit");
 
+    ActionListener exitButton = new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent actionEvent) {
+            frame.setVisible(false);
+            frame.dispose();
+        }
+    };
+
     public void drawTopMenu(){
         menu.add(exit);
         menuBar.add(menu);
+        menu.addActionListener(exitButton);
         frame.setJMenuBar(menuBar);
     }
 
