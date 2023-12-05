@@ -22,7 +22,7 @@ public class main {
     public void drawTopMenu(){
         menu.add(exit);
         menuBar.add(menu);
-        menu.addActionListener(exitButton);
+        exit.addActionListener(exitButton);
         frame.setJMenuBar(menuBar);
     }
 
